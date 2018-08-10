@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet preload">
+  <title>CSS Layouts</title>
+</head>
+<body>
+    <div class="main-wrapper">
+      <header>
+        <div class="navigation">
+          <div class="logo" id="home">
+            <p>Black & white</p>
+          </div>
+          <nav>
+            <a role="button" href="#home" target="_self">Home</a>
+            <a role="button" href="#about" target="_self">About</a>
+            <a role="button" href="#vacancies" target="_self">Vacancies</a>
+            <a role="button" href="#shop" target="_self">Shop</a>
+          </nav>
+        </div>
+        <div class="heading">
+          <div>
+            <h1>Black <span>&</span> white</h1>
+            <p>An original brand since 1965</p>
+          </div>
+          <div class="toolbar">
+            <button type="submit" class="button-more">Show More</button>
+            <div class="black-shadow"></div>  
+          </div>
+        </div>
+      </header>
+
+      <section id="about">
+        <div class="paragraph-1">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <span class="bold-text">commodo ligula</span>
+          eget dolor.</p>
+        </div>
+        <div class="paragraph-2">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
+          eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, 
+          sem.</p>
+        </div>
+      </section>
+
+      <div class="article-wrapper" id="vacancies">
+        <h2>Read some of our <span class="bold-text">featured articles</span></h2>
+        <div class="articles-box">
+          <article>
+            <div class="article-part-1">
+              <img src="img/sample.jpg" alt="desktop">
+              <div class="black-shadow"></div>
+              <h3>January'15 <span class="bold-text">South America</span></h3>
+              <p>172</p>
+            </div>
+            <div class="article-part-2">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+              felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+          </article>
+  
+          <article>
+            <div class="article-part-1">
+              <img src="img/sample3.jpg" alt="work_desk">
+              <div class="black-shadow"></div>
+              <h3>January'15 <span class="bold-text">South America</span></h3>
+              <p>124</p>
+            </div>
+            <div class="article-part-2">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+              felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+          </article>
+  
+          <article>
+            <div class="article-part-1"> 
+              <img src="img/sample.jpg" alt="desktop">
+              <div class="black-shadow"></div>
+              <h3>January'15 <span class="bold-text">South America</span></h3>
+              <p>56</p>
+            </div>
+            <div class="article-part-2">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+              felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+          </article>
+    
+          <article>
+            <div class="article-part-1">
+              <img src="img/sample3.jpg" alt="work_desk">
+              <div class="black-shadow"></div>
+              <h3>January'15 <span class="bold-text">South America</span></h3>
+              <p>15</p>
+            </div>
+            <div class="article-part-2">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis
+              natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam 
+              felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="substribing-wrapper" id="shop"> 
+          <h2>Subscribe to our <span class="bold-text">newsletter</span></h2>
+          <div class="substribing-form">
+            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Enter your e-mail address">
+            <button type="submit" class="">Subscribe</button>
+          </div>
+        </section>
+      </div>
+
+      <footer class="bottom-wrapper">
+        <div class="bottom-section">
+          <h4>Black & White</h4>
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget 
+          condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+        </div>
+        <div class="bottom-section">
+          <h4>Last Tweet</h4>
+          <p>...am quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante 
+          tincidunt tempus.</p>
+          <p class="light-text">3 hours ago</p>
+        </div>
+        <div class="bottom-section">
+          <h4>Contact</h4>
+          <p>www.Loremdolor.rm 112 AB Your Street Name e-mail@loremimpsum.com +(121)01 23 45 679</p>
+        </div>
+        <div class="bottom-section">
+          <h4>Newsletter</h4>
+          <p >In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+          <div class="substribing-form">
+              <input type="email" id="contact_email_bottom" name="contact_email" class="form-control" placeholder="Enter your e-mail address">
+              <button type="submit" class="">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+
+      <div class="bottom-navigation-box">
+        <p>2015 Ruben Stom</p>
+
+        <nav class="bottom-navigation">
+          <a role="button" href="#home" target="_self">Home</a>
+          <a role="button" href="#about" target="_self">About</a>
+          <a role="button" href="#vacancies" target="_self">Vacancies</a>
+          <a role="button" href="#shop" target="_self">Shop</a>
+        </nav>
+      </div>
+
+    </div>
+    
+</body>
+</html>
