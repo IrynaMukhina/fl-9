@@ -1,25 +1,249 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
+
+/*:root {
   --bg-color--dark: #0a1223;
   --bg-color--light: #fff;
   --link: #5d5d5d;
   --link--active: #54597d;
-  --link--hover: #54597d;
+  --link--hover: #54597d; 
   --article-title: #ddd;
   --article-title--dark: #000;
   --thumbnail--description: #5d5d5d;
-
-  /* These styles are needed only for media query max-width: 575px */
-
-  /* The 'Up' button (circle button at right bottom corner) */
   --btn-color: #fff;
   --btn-bg-color: #5ebcff;
-
   --navigation-border-bottom: #ddd;
   --thumbnail-title: #484747;
+}*/
+
+* {
+  padding: 0;
 }
 
-/* Your styles go here */
+body {
+  font-family: sans-serif;
+  background-color: #0a1223;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 80%; 
+}
+
+.navigation-wrapper {
+  display: flex;
+}
+
+.navigation-link-box {
+  display: flex;
+}
+
+.link-item a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+.link-item a:hover {
+  color: #54597d;
+}
+
+.link-item a:active {
+  color: #54597d;
+}
+
+.articles-box {
+  display: flex;
+}
+
+.title-wrapper {
+  height: 16em;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.article-text h2 {
+  font-size: 1.6em;
+  background: linear-gradient(to right, #ddd, #484747);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+.article-text p {
+  color: #5d5d5d;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+
+.bottom-up {
+  display: none;
+}
+
+
+@media screen and (min-width: 991px) {
+
+  .main-wrapper {
+    flex-direction: column;
+  
+  }
+
+  .navigation-wrapper {
+    justify-content: flex-end;
+  }
+
+  .navigation-link-box {
+    width: 40%;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .title-wrapper h1 {
+    color: #ddd;
+    font-size: 4.5vw; 
+  }
+
+  .articles-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .articles-box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .article-text {
+    width: 42%;
+  }
+
+  .article-img {
+    width: 42%;
+  }
+
+  .article-img img {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 990px) {
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .articles-box { 
+    flex-direction: column;
+  }
+
+  .navigation-wrapper {
+    justify-content: center;
+  }
+
+  .navigation-link-box {
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-wrapper h1 {
+    color: #ddd;
+    font-size: 2.5em; 
+  }
+
+  .article-text h2 {
+    font-size: 1.5em;
+  }
+
+  .articles-box {
+    flex-direction: column;
+  }
+
+  .article-img img {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    background-color: #fff;
+  }
+
+  .navigation-wrapper {
+    justify-content: flex-start;
+    height: 6em;
+  }
+
+  .navigation-link-box {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .link-item {
+    width: 100%;
+    border-bottom: 0.05em solid black;
+  }
+
+  .link-item:hover {
+    font-weight: bold;
+  }
+
+  .title-wrapper h1 {
+    color: #000;
+    font-size: 2em; 
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+
+  .articles-box { 
+    flex-direction: column;
+  }
+
+  .article-text h2 {
+    background: linear-gradient(to right, #484747, #484747);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    font-size: 1em;
+    
+  }
+
+  .article-img img {
+    width: 100%;
+  }
+
+  .bottom-up {
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background-color: #5ebcff;
+    color: #fff;
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none; 
+           
+  }  
+
+  .bottom-up:hover {
+    background-color: #3aa7f4;
+  }
+
+  a:link, a:visited, a:hover, a:focus, a:active {
+    border: 0;
+    outline: 0;
+    }
+
+}
+
+
+
