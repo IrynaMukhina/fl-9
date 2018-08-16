@@ -246,7 +246,7 @@ section .paragraph-2 {
   color: #a0a1ad;
   font-size: 12px;
   margin: 15px;
-  padding: 10px;
+  padding: 10px;  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
