@@ -3,7 +3,7 @@
 function getClosestToZero() {
     let closestToZero = arguments[0];
 
-    for (let i = 0; i <= arguments.length-1; i++) {
+    for (let i = 0; i <= arguments.length; i++) {
         if(Math.abs(arguments[i]) < Math.abs(closestToZero)) {
             closestToZero = arguments[i];
         }
