@@ -1,18 +1,14 @@
-//task 1
 function findType(parameter) {
-    let type = typeof parameter;
 
-    return type;
+    return typeof parameter;
 }
 
-//task 2
 function forEach(taskArray, taskFunction) {
     for(let i = 0; i < taskArray.length; i++) {
         taskFunction(taskArray[i]);
     }
 }
 
-//task 3
 function map(taskArray, taskFunction) {
     let transformedArray = [];
     forEach(taskArray, function(item) {
@@ -22,7 +18,6 @@ function map(taskArray, taskFunction) {
     return transformedArray;
 }
 
-//task 4
 function filter(taskArray, taskFunction) {
     let filteredArray = [];
     forEach(taskArray, function(item) {
@@ -34,19 +29,18 @@ function filter(taskArray, taskFunction) {
     return filteredArray;
 }
 
-//task 5
 function getAdultAppleLovers(taskArray) {
-    let adultAppleLoversArray = [];
-    filter(taskArray, function(val) {
-        if(val.age >= 18 && val.favoriteFruit === 'apple') {
-            adultAppleLoversArray.push(val.name);
-        }
-    });
+    let adultAppleLovers = filter(taskArray, function(key) {
 
-    return adultAppleLoversArray;
+        return key.age > 18 && key.favoriteFruit === 'apple';
+    });
+      
+    return map(adultAppleLovers, function(key) {
+    
+        return key.name;
+    });
 }
-  
-//task 6
+
 function keys(taskObject) {
     let keysArray = [];
     for(let key in taskObject) {
@@ -58,7 +52,6 @@ function keys(taskObject) {
     return keysArray;   
 }
 
-//task 7
 function values(taskObject) {
     let valuesArray = [];
     for(let value in taskObject) {
@@ -70,12 +63,11 @@ function values(taskObject) {
     return valuesArray; 
 }
 
-//task 8
 function showFormattedDate(date){
-    let day = date.getDay();
+    let day = date.getDate();
     let month = date.getMonth();
     let monthLetters = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul', 'Aug', 'Sep','Oct', 'Nov', 'Dec'];
     let year = date.getFullYear();
 
-    return 'It is ' + day + ' of ' + monthLetters[month] + ', ' + year;
+    return `It is ${day} of ${monthLetters[month]}, ${year}`;
 }
