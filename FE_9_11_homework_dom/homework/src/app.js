@@ -1,4 +1,4 @@
-const rootNode = document.getElementById('root');
+
 
 let footerLogo = document.getElementById('logo-wrapper');
 let logoImg = document.createElement('IMG');
@@ -12,15 +12,14 @@ let iconCheck = '<i class="material-icons">check_box_outline_blank</i>';
 let iconDone = '<i class="material-icons" id="doneImg">check_box</i>';
 
 const MAX_ITEM = 10;
-const ONE = 1;
 const ZERO = 0;
+let arrList = document.getElementsByTagName('li');
 
 let newTask = document.getElementById('action-button');
 
 newTask.addEventListener('click', addCatTask);
 
 function addCatTask() {
-    let arrList = document.getElementsByTagName('li');
     if(arrList.length < MAX_ITEM) {
         let wrapper = document.getElementById('list-wrapper');
         
@@ -69,8 +68,7 @@ function doneTask() {
 }
 
 function deleteTask() {
-    this.parentElement.remove();
-    let arrList = document.getElementsByTagName('li');
+    this.parentElement.remove();   
     if (arrList.length < MAX_ITEM) {
         document.getElementById('action-text').disabled = false;
         document.getElementById('action-button').disabled = false;

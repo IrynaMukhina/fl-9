@@ -1,5 +1,5 @@
 * {
-    max-width: 900px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto;
     font-family: "Roboto", serif;
@@ -71,7 +71,7 @@ button {
 .image-logo {
     display: flex;
     justify-content: center;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
 }
 
