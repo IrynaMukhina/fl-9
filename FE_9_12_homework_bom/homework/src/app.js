@@ -139,47 +139,5 @@ function addItemTodo(text) {
   
     list.insertBefore(task, taskList.childNodes[firstNumberOfList]);
   }
-  
-    // todoButton.addEventListener('click', function () {
-    //     let rootDiv = document.getElementsByClassName('first');
-    //     clearDiv(rootDiv);
-    //     addElement(rootDiv);
 
-    //     // let btnEvent = document.getElementsByClassName('save-btn');
-        // if (btnEvent) {
-        //     btnEvent.addEventListener('click', function () {
-        //         let rootDiv = document.getElementsByClassName('first');
-        //         clearDiv(rootDiv);
-        //         addItemsTodo(rootDiv);
-        //     })
-        // }
-    // });
-    
-
-    // function addElement() {
-    //     let secondPage = document.createElement('div');
-    //     secondPage.classList.add('second');
-    //     let secondTitle = document.createElement('h1');
-    //     secondTitle.innerHTML = 'Add task';
-    //     let taskField = document.createElement('input');
-    //     let secondCancelTask = document.createElement('button');
-    //     secondCancelTask.innerHTML = 'Cancel';
-    //     let secondSaveTask = document.createElement('button');
-    //     secondSaveTask.classList.add = ('save-btn');
-    //     secondSaveTask.innerHTML = 'Save changes';
-    // }
-
-    // function clearDiv() {
-    //     while (div.firstChild) {
-    //         div.removeChild(div.firstChild);
-    //     }
-    // }
-
-    // function addItemsTodo() {
-    //     let firstTitle = document.createElement('h1');
-    //     firstTitle.innerHTML = 'Simple TODO application';
-    //     let addLink = document.createElement('a');
-    //     let todoButton = document.createElement('button');
-    //     todoButton.innerHTML = 'Add new task';
-    // }
     
